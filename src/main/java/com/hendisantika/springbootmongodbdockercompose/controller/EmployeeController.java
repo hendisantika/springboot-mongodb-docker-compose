@@ -1,7 +1,10 @@
 package com.hendisantika.springbootmongodbdockercompose.controller;
 
+import com.hendisantika.springbootmongodbdockercompose.model.Employee;
 import com.hendisantika.springbootmongodbdockercompose.repository.EmployeeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -18,4 +21,11 @@ public class EmployeeController {
 
     @Autowired
     private EmployeeRepository empRepository;
+
+    @PostMapping("/addEmployee")
+    public String saveEmployee(@RequestBody Employee emp) {
+        empRepository.save(emp);
+        return "employee added successfully::" + emp.getId();
+    }
+
 }
