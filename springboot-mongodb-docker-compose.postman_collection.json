@@ -1,0 +1,212 @@
+{
+  "info": {
+    "_postman_id": "3253947f-cf5f-4ff0-8d00-d2f496f7aa04",
+    "name": "springboot-mongodb-docker-compose",
+    "description": "springboot-mongodb-docker-compose",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Add New Employee",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n\t\"name\": \"Uzumaki Naruto\",\n\t\"departement\": \"Hokage\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/employees/addEmployee",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "employees",
+            "addEmployee"
+          ]
+        },
+        "description": "Add New Employee"
+      },
+      "response": []
+    },
+    {
+      "name": "Get All Employees",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/employees/findAllEmployees",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "employees",
+            "findAllEmployees"
+          ]
+        },
+        "description": "Get All Employees"
+      },
+      "response": []
+    },
+    {
+      "name": "Get Employee By ID",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/employees/findEmployee/5e9437c51a49693fe9b947e1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "employees",
+            "findEmployee",
+            "5e9437c51a49693fe9b947e1"
+          ]
+        },
+        "description": "Get Employee By ID"
+      },
+      "response": []
+    },
+    {
+      "name": "Delete Employee By ID",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/employees/deleteEmployee/5e9437c51a49693fe9b947e1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "employees",
+            "deleteEmployee",
+            "5e9437c51a49693fe9b947e1"
+          ]
+        },
+        "description": "Delete Employee By ID"
+      },
+      "response": []
+    },
+    {
+      "name": "Add New Employee in Docker",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n\t\"name\": \"Hyuga Neji\",\n\t\"departement\": \"Jounin\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8081/api/employees/addEmployee",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8081",
+          "path": [
+            "api",
+            "employees",
+            "addEmployee"
+          ]
+        },
+        "description": "Add New Employee in Docker"
+      },
+      "response": []
+    },
+    {
+      "name": "Get All Employees in Docker ",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:8081/api/employees/findAllEmployees",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8081",
+          "path": [
+            "api",
+            "employees",
+            "findAllEmployees"
+          ]
+        },
+        "description": "Get All Employees in Docker "
+      },
+      "response": []
+    },
+    {
+      "name": "Get Employee By ID in Docker",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8081/api/employees/findEmployee/5e944d32e657bd3f3aef143f",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8081",
+          "path": [
+            "api",
+            "employees",
+            "findEmployee",
+            "5e944d32e657bd3f3aef143f"
+          ]
+        },
+        "description": "Get Employee By ID in Docker"
+      },
+      "response": []
+    },
+    {
+      "name": "Delete Employee By ID in Docker",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8081/api/employees/deleteEmployee/5e944d32e657bd3f3aef143f",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8081",
+          "path": [
+            "api",
+            "employees",
+            "deleteEmployee",
+            "5e944d32e657bd3f3aef143f"
+          ]
+        },
+        "description": "Delete Employee By ID in Docker"
+      },
+      "response": []
+    }
+  ],
+  "protocolProfileBehavior": {}
+}
