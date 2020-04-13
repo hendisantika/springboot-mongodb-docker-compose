@@ -30,6 +30,9 @@ Delete Employee By Id
 2. Build Docker Image: `docker build -t hendisantika/springboot-mongodb-docker-compose .`
 3. Check Docker Images is exist: `docker images`
 4. Run Docker Compose: `docker-compose up`
+5. Stop App in Docker Compose: `ctl + c`
+
+
 ```shell script
 Creating network "springboot-mongodb-docker-compose_default" with the default driver
 Pulling mymongodb (mongo:latest)...
