@@ -12,5 +12,5 @@ import org.springframework.data.mongodb.repository.MongoRepository;
  * Date: 13/04/20
  * Time: 16.36
  */
-public interface EmployeeRepository extends MongoRepository<Employee, Integer> {
+public interface EmployeeRepository extends MongoRepository<Employee, String> {
 }

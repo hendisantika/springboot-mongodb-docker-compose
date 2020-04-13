@@ -41,12 +41,12 @@ public class EmployeeController {
     }
 
     @GetMapping("/findEmployee/{id}")
-    public Optional<Employee> getEmployee(@PathVariable int id) {
+    public Optional<Employee> getEmployee(@PathVariable String id) {
         return empRepository.findById(id);
     }
 
     @GetMapping("/deleteEmployee/{id}")
-    public String deleteEmployee(@PathVariable int id) {
+    public String deleteEmployee(@PathVariable String id) {
         empRepository.deleteById(id);
         return "Deleted Employee Successfully::" + id;
     }
