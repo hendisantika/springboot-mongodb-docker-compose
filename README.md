@@ -34,6 +34,7 @@ Delete Employee By Id
 
 
 ```shell script
+Hendis-MacBook-Pro:springboot-mongodb-docker-compose hendisantika$ docker-compose up
 Creating network "springboot-mongodb-docker-compose_default" with the default driver
 Pulling mymongodb (mongo:latest)...
 latest: Pulling from library/mongo
@@ -145,4 +146,4 @@ Docker Images
 ![Docker Image](img/docker-images.png "Docker Images")
 
 Docker Compose UP
-![Docker Compose UP](img/ "Docker Compose UP")
+![Docker Compose UP](img/docker-compose.png "Docker Compose UP")
