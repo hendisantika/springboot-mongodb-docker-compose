@@ -42,4 +42,10 @@ public class EmployeeController {
     public Optional<Employee> getEmployee(@PathVariable int id) {
         return empRepository.findById(id);
     }
+
+    @GetMapping("/deleteEmployee/{id}")
+    public String deleteEmployee(@PathVariable int id) {
+        empRepository.deleteById(id);
+        return "Deleted Employee Successfully::" + id;
+    }
 }
