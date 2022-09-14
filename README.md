@@ -147,3 +147,8 @@ Docker Images
 
 Docker Compose UP
 ![Docker Compose UP](img/docker-compose.png "Docker Compose UP")
+
+
+### Infrastructure model
+
+![Infrastructure model](.infragenie/infrastructure_model.png)
