@@ -1,4 +1,4 @@
-FROM adoptopenjdk/openjdk11:alpine-jre
+FROM eclipse-temurin:21.0.3_9-jdk-jammy
 LABEL maintainer="hendisantika@yahoo.co.id"
 VOLUME /tmp
 EXPOSE 8080
